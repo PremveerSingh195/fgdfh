@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">RealEstate</h3>
+            <h3 className="text-xl font-bold mb-4">Future Group</h3>
             <p className="text-gray-300">
               Your trusted partner in finding the perfect property.
             </p>
@@ -47,10 +47,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <ul className="space-y-2 text-gray-300">
-              <li>123 Real Estate Street</li>
-              <li>City, State 12345</li>
-              <li>Phone: (555) 123-4567</li>
-              <li>Email: info@realestate.com</li>
+              <li>Plot No. 3-4, Second Floor</li>
+              <li>Main Rohtak Road , Rajender Park</li>
+              <li>OPP. Metro Pillar No. 430</li>
+              <li>Nangloi Delhi 110041</li>
             </ul>
           </div>
 
@@ -75,7 +75,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
           <p>
-            &copy; {new Date().getFullYear()} RealEstate. All rights reserved.
+            &copy; {new Date().getFullYear()} Future Group. All rights reserved.
           </p>
         </div>
       </div>
