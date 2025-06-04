@@ -1,4 +1,4 @@
-// File: /home/prem/Full stack Projects/FGDFH/src/app/layout.js
+// File: /Users/premveersingh/Documents/Prem/fgdfh/src/app/layout.js
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
