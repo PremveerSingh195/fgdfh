@@ -216,16 +216,6 @@ export default function Home() {
       sqft: 1800,
       image: "/img20.jpeg",
     },
-    {
-      id: 21,
-      title: "Management meetings",
-      price: "$650,000",
-      location: "Harbor View",
-      beds: 3,
-      baths: 2,
-      sqft: 1800,
-      image: "/img21.jpeg",
-    },
   ];
 
   const profiles = [
