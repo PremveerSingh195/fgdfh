@@ -99,7 +99,7 @@ export default function Home() {
     {
       id: 2,
       name: "Afa Hussain",
-      role: "Manager",
+      role: "Director",
       image: "hafa.png",
       about: "Contact No. - 9315871006",
     },
@@ -109,6 +109,9 @@ export default function Home() {
     <Layout>
       {/* Hero Section */}
       <section className=" h-auto bg-gray-900">
+        <h2 className="text-white text-3xl font-bold flex justify-center items-center pt-4 px-2">
+          Future Group developer farm house Since 2017.
+        </h2>
         <div className="w-full max-w-5xl mx-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
           {profiles.map((profile) => (
             <div
@@ -133,9 +136,7 @@ export default function Home() {
       {/* Featured Properties Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">
-            Featured Properties
-          </h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Featured</h2>
           {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredProperties.map((property) => (
               <div
