@@ -18,6 +18,16 @@ export default function Home() {
 
   const featuredProperties = [
     {
+      id: 0,
+      title: "Future Group Development Farm House",
+      price: "$450,000",
+      location: "Downtown",
+      beds: 2,
+      baths: 2,
+      sqft: 1200,
+      image: "/fgdfhimg.png",
+    },
+    {
       id: 1,
       title: "The Best Location in IMT Sohna",
       price: "$450,000",
@@ -216,6 +226,26 @@ export default function Home() {
       baths: 2,
       sqft: 1800,
       image: "/img20.jpeg",
+    },
+    {
+      id: 21,
+      title: "Property Booking",
+      price: "$650,000",
+      location: "Harbor View",
+      beds: 3,
+      baths: 2,
+      sqft: 1800,
+      image: "/img21.jpeg",
+    },
+    {
+      id: 22,
+      title: "Company Top Management",
+      price: "$650,000",
+      location: "Harbor View",
+      beds: 3,
+      baths: 2,
+      sqft: 1800,
+      image: "/img22.jpeg",
     },
   ];
 
