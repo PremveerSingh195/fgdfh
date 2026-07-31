@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+html {
+  /* Increases default 1rem from 16px to 18px, scaling up text and UI globally */
+  font-size: 18px;
+}
