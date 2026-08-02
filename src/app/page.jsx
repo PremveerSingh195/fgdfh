@@ -23,9 +23,9 @@ export default function Home() {
   ];
 
   const heroImages = [
-    "/img1.jpeg",
-    "/img2.jpeg",
-    "/img3.jpeg",
+    "/img18.jpeg",
+    "/img10.jpeg",
+    "/img9.jpeg",
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -167,12 +167,12 @@ export default function Home() {
             <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group">
               <div className="relative h-56 overflow-hidden">
                 <span className="absolute top-4 left-4 z-10 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">Sale</span>
-                <img src="/img1.jpeg" alt="Golden City" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img src="/city_shine.png" alt="Golden City" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="p-5">
                 <div className="flex justify-between items-start mb-2">
-                  <h4 className="text-lg font-bold text-gray-900">Golden City</h4>
-                  <span className="text-lg font-bold text-blue-600 whitespace-nowrap">₹14,000</span>
+                  <h4 className="text-lg font-bold text-gray-900">City Shine</h4>
+                  <span className="text-lg font-bold text-blue-600 whitespace-nowrap">Starting at ₹13,000/Gaj</span>
                 </div>
                 <div className="flex items-center text-gray-500 text-sm mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1.5 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
@@ -190,7 +190,7 @@ export default function Home() {
                   </span>
                   <span className="flex items-center gap-1.5">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" /></svg>
-                    ₹14,000 Gaz
+                    ₹13,000 Gaz
                   </span>
                 </div>
               </div>
@@ -200,12 +200,12 @@ export default function Home() {
             <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group">
               <div className="relative h-56 overflow-hidden">
                 <span className="absolute top-4 left-4 z-10 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">Sale</span>
-                <img src="/img2.jpeg" alt="Ram Vihar" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img src="/golden_city.png" alt="Ram Vihar" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="p-5">
                 <div className="flex justify-between items-start mb-2">
-                  <h4 className="text-lg font-bold text-gray-900">Ram Vihar</h4>
-                  <span className="text-lg font-bold text-blue-600 whitespace-nowrap">₹18,000</span>
+                  <h4 className="text-lg font-bold text-gray-900">Golden City</h4>
+                  <span className="text-lg font-bold text-blue-600 whitespace-nowrap">Starting at ₹9,000/Gaj</span>
                 </div>
                 <div className="flex items-center text-gray-500 text-sm mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1.5 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
@@ -233,12 +233,12 @@ export default function Home() {
             <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group">
               <div className="relative h-56 overflow-hidden">
                 <span className="absolute top-4 left-4 z-10 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">Sale</span>
-                <img src="/img3.jpeg" alt="Asian Residency" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img src="/star_city.png" alt="Asian Residency" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="p-5">
                 <div className="flex justify-between items-start mb-2">
-                  <h4 className="text-lg font-bold text-gray-900">Asian Residency</h4>
-                  <span className="text-lg font-bold text-blue-600 whitespace-nowrap">₹20,000</span>
+                  <h4 className="text-lg font-bold text-gray-900">Star City</h4>
+                  <span className="text-lg font-bold text-blue-600 whitespace-nowrap">Starting at ₹7,000/Gaj</span>
                 </div>
                 <div className="flex items-center text-gray-500 text-sm mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1.5 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
@@ -257,105 +257,6 @@ export default function Home() {
                   <span className="flex items-center gap-1.5">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" /></svg>
                     ₹20,000 Gaz
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Card 4 */}
-            <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group">
-              <div className="relative h-56 overflow-hidden">
-                <span className="absolute top-4 left-4 z-10 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">SaleOut</span>
-                <img src="/img4.jpeg" alt="A Block" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div className="p-5">
-                <div className="flex justify-between items-start mb-2">
-                  <h4 className="text-lg font-bold text-gray-900">A Block</h4>
-                  <span className="text-lg font-bold text-blue-600 whitespace-nowrap">₹8,500</span>
-                </div>
-                <div className="flex items-center text-gray-500 text-sm mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1.5 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                  IMT Sohna (Gurugram)
-                </div>
-                <hr className="border-gray-100 mb-4" />
-                <div className="flex justify-between items-center text-sm text-gray-500">
-                  <span className="flex items-center gap-1.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-                    Images
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
-                    Video Tour
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" /></svg>
-                    ₹8,500 Gaz
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Card 5 */}
-            <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group">
-              <div className="relative h-56 overflow-hidden">
-                <span className="absolute top-4 left-4 z-10 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">SaleOut</span>
-                <img src="/img5.jpeg" alt="B Block" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div className="p-5">
-                <div className="flex justify-between items-start mb-2">
-                  <h4 className="text-lg font-bold text-gray-900">B Block</h4>
-                  <span className="text-lg font-bold text-blue-600 whitespace-nowrap">₹9,000</span>
-                </div>
-                <div className="flex items-center text-gray-500 text-sm mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1.5 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                  IMT Sohna (Gurugram)
-                </div>
-                <hr className="border-gray-100 mb-4" />
-                <div className="flex justify-between items-center text-sm text-gray-500">
-                  <span className="flex items-center gap-1.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-                    Images
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
-                    Video Tour
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" /></svg>
-                    ₹9,000 Gaz
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Card 6 */}
-            <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group">
-              <div className="relative h-56 overflow-hidden">
-                <span className="absolute top-4 left-4 z-10 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">Sale</span>
-                <img src="/img6.jpeg" alt="Welcome City" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div className="p-5">
-                <div className="flex justify-between items-start mb-2">
-                  <h4 className="text-lg font-bold text-gray-900">Welcome City</h4>
-                  <span className="text-lg font-bold text-blue-600 whitespace-nowrap">₹18,000</span>
-                </div>
-                <div className="flex items-center text-gray-500 text-sm mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1.5 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                  IMT Sohna (Gurugram)
-                </div>
-                <hr className="border-gray-100 mb-4" />
-                <div className="flex justify-between items-center text-sm text-gray-500">
-                  <span className="flex items-center gap-1.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-                    Images
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
-                    Video Tour
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" /></svg>
-                    ₹18,000 Gaz
                   </span>
                 </div>
               </div>
@@ -476,7 +377,7 @@ export default function Home() {
 
             {/* Gurugram - Large */}
             <div className="relative rounded-2xl overflow-hidden group col-span-2 row-span-2 cursor-pointer">
-              <img src="/img1.jpeg" alt="Gurugram" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src="https://ik.imagekit.io/oplivamp7m/Gemini_Generated_Image_n8ggypn8ggypn8gg.png" alt="Gurugram" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-6 z-10">
                 <h4 className="text-2xl font-bold text-white mb-1">Gurugram</h4>
@@ -489,7 +390,7 @@ export default function Home() {
 
             {/* Delhi */}
             <div className="relative rounded-2xl overflow-hidden group cursor-pointer">
-              <img src="/img2.jpeg" alt="Delhi" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src="https://ik.imagekit.io/oplivamp7m/Gemini_Generated_Image_9riebb9riebb9rie.png" alt="Delhi" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-5 z-10">
                 <h4 className="text-xl font-bold text-white mb-0.5">Delhi</h4>
@@ -499,40 +400,40 @@ export default function Home() {
 
             {/* Sohna */}
             <div className="relative rounded-2xl overflow-hidden group cursor-pointer">
-              <img src="/img3.jpeg" alt="Sohna" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src="https://ik.imagekit.io/oplivamp7m/Gemini_Generated_Image_5lqh735lqh735lqh.png" alt="Sohna" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-5 z-10">
-                <h4 className="text-xl font-bold text-white mb-0.5">Sohna</h4>
+                <h4 className="text-xl font-bold text-white mb-0.5">Lucknow</h4>
                 <p className="text-xs text-gray-300">15 Properties</p>
               </div>
             </div>
 
             {/* Jewar */}
             <div className="relative rounded-2xl overflow-hidden group cursor-pointer">
-              <img src="/img4.jpeg" alt="Jewar" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src="https://ik.imagekit.io/oplivamp7m/Gemini_Generated_Image_adgb5radgb5radgb.png" alt="Jewar" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-5 z-10">
-                <h4 className="text-xl font-bold text-white mb-0.5">Jewar</h4>
+                <h4 className="text-xl font-bold text-white mb-0.5">Jewar Airport</h4>
                 <p className="text-xs text-gray-300">6 Properties</p>
               </div>
             </div>
 
             {/* Hathin */}
             <div className="relative rounded-2xl overflow-hidden group cursor-pointer">
-              <img src="/img5.jpeg" alt="Hathin" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src="https://ik.imagekit.io/oplivamp7m/Gemini_Generated_Image_a7s7zda7s7zda7s7.png" alt="Hathin" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-5 z-10">
-                <h4 className="text-xl font-bold text-white mb-0.5">Hathin</h4>
+                <h4 className="text-xl font-bold text-white mb-0.5">Mathura</h4>
                 <p className="text-xs text-gray-300">4 Properties</p>
               </div>
             </div>
 
             {/* Indri */}
             <div className="relative rounded-2xl overflow-hidden group col-span-2 cursor-pointer">
-              <img src="/img6.jpeg" alt="Indri" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src="https://ik.imagekit.io/oplivamp7m/Gemini_Generated_Image_6w67mf6w67mf6w67.png" alt="Indri" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-5 z-10">
-                <h4 className="text-xl font-bold text-white mb-0.5">Indri</h4>
+                <h4 className="text-xl font-bold text-white mb-0.5">Ghaziabad</h4>
                 <p className="text-xs text-gray-300">5 Properties</p>
               </div>
               <div className="absolute top-4 right-4 z-10 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -552,7 +453,7 @@ export default function Home() {
 
             {/* Faridabad */}
             <div className="relative rounded-2xl overflow-hidden group cursor-pointer">
-              <img src="/img8.jpeg" alt="Faridabad" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src="https://ik.imagekit.io/oplivamp7m/Gemini_Generated_Image_t2fxuvt2fxuvt2fx.png" alt="Faridabad" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-5 z-10">
                 <h4 className="text-xl font-bold text-white mb-0.5">Faridabad</h4>
@@ -700,39 +601,78 @@ export default function Home() {
       </section>
 
       {/* Leadership Section */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-sm font-bold tracking-wide text-blue-600 uppercase mb-2">Our Leadership</h2>
-            <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900">Meet the Directors</h3>
-            <p className="mt-4 text-lg text-gray-600">
+      <section className="relative py-28 overflow-hidden">
+        {/* Dark premium background */}
+        <div className="absolute inset-0 bg-[#0a1128]"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/40 via-transparent to-purple-950/30"></div>
+        {/* Subtle grid pattern */}
+        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Section Header */}
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <span className="inline-block text-sm font-bold tracking-[0.25em] text-blue-400 uppercase mb-4 bg-blue-500/10 px-4 py-1.5 rounded-full border border-blue-500/20">Our Leadership</span>
+            <h3 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight mt-4">Meet the Directors</h3>
+            <div className="flex items-center justify-center gap-2 mt-6">
+              <div className="w-12 h-0.5 bg-blue-600 rounded-full"></div>
+              <div className="w-3 h-3 bg-blue-600 rounded-full"></div>
+              <div className="w-12 h-0.5 bg-blue-600 rounded-full"></div>
+            </div>
+            <p className="mt-6 text-xl text-gray-400 leading-relaxed">
               The visionaries driving Future Group Developer towards excellence and innovation in real estate.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+          {/* Director Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
             {profiles.map((profile) => (
               <div
                 key={profile.id}
-                className="group flex flex-col sm:flex-row items-center gap-8 p-8 bg-white rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100"
+                className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl overflow-hidden hover:border-blue-500/30 transition-all duration-500"
               >
-                <div className="relative w-32 h-32 rounded-full overflow-hidden shrink-0 border-4 border-white shadow-lg">
+                {/* Image */}
+                <div className="relative h-80 overflow-hidden bg-[#0d1a3a]">
                   <img
                     src={profile.image}
                     alt={profile.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a1128] via-transparent to-transparent"></div>
                 </div>
-                <div className="text-center sm:text-left flex-1">
-                  <h4 className="text-2xl font-bold text-gray-900 mb-1">{profile.name}</h4>
-                  <p className="text-blue-600 font-medium mb-4">{profile.role}</p>
-                  <a href={`tel:${profile.about.replace(/\D/g, '')}`} className="inline-flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                    </svg>
-                    {profile.about.replace('Contact No. - ', '')}
-                  </a>
+
+                {/* Info */}
+                <div className="relative p-8 -mt-16 z-10">
+                  <h4 className="text-2xl font-bold text-white mb-1">{profile.name}</h4>
+                  <p className="text-blue-400 font-semibold uppercase tracking-wider text-sm mb-6">{profile.role}</p>
+
+                  <div className="flex items-center gap-3 flex-wrap">
+                    {/* Call Button */}
+                    <a
+                      href={`tel:${profile.about.replace(/\D/g, '')}`}
+                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-full text-sm font-semibold transition-all duration-300 shadow-lg shadow-blue-600/25"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                      </svg>
+                      {profile.about.replace('Contact No. - ', '')}
+                    </a>
+                    {/* WhatsApp Button */}
+                    <a
+                      href={`https://wa.me/91${profile.about.replace(/\D/g, '')}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-green-500 hover:bg-green-400 text-white rounded-full text-sm font-semibold transition-all duration-300 shadow-lg shadow-green-500/25"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                      </svg>
+                      WhatsApp
+                    </a>
+                  </div>
                 </div>
+
+                {/* Decorative corner accent */}
+                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-blue-500/10 to-transparent rounded-bl-full"></div>
               </div>
             ))}
           </div>
