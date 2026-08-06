@@ -1,103 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import Layout from "../../components/Layout";
 import Link from "next/link";
-
-const properties = [
-  {
-    id: 1,
-    name: "City Shine",
-    image: "/city_shine.png",
-    tagline: "Premium Urban Living",
-    description:
-      "Experience the pinnacle of modern city living with City Shine. Strategically located with world-class amenities, lush green surroundings, and premium infrastructure designed for a luxurious lifestyle.",
-    highlights: [
-      "Prime Location",
-      "24/7 Security",
-      "Landscaped Gardens",
-      "Wide Roads",
-    ],
-    pricing: [
-      { rate: "13,000", type: "One-Time Payment", badge: null },
-      { rate: "13,500", type: "12 EMI Per Month", badge: null },
-      { rate: "14,000", type: "18 EMI Per Month", badge: "Popular" },
-      { rate: "15,000", type: "24 EMI Per Month", badge: null },
-    ],
-    accentFrom: "from-amber-400",
-    accentTo: "to-orange-600",
-    accentBg: "bg-amber-500",
-    accentText: "text-amber-400",
-    accentBorder: "border-amber-500/30",
-    accentGlow: "rgba(245,158,11,0.4)",
-    accentBgLight: "bg-amber-500/10",
-    accentHover: "hover:bg-amber-500",
-    badgeBg: "bg-amber-500",
-  },
-  {
-    id: 2,
-    name: "Mandkola Golden City",
-    phase: "Phase 1",
-    image: "/golden_city.png",
-    tagline: "Golden Opportunities Await",
-    description:
-      "Mandkola Golden City Phase 1 offers an exclusive opportunity to invest in a thriving community. With affordable rates and flexible payment options, this is your gateway to owning a premium plot.",
-    highlights: [
-      "Affordable Pricing",
-      "Flexible EMI Options",
-      "Gated Community",
-      "Modern Infrastructure",
-    ],
-    pricing: [
-      { rate: "9,000", type: "One-Time Payment", badge: null },
-      { rate: "9,500", type: "12 EMI Per Month", badge: null },
-      { rate: "10,000", type: "18 EMI Per Month", badge: "Popular" },
-      { rate: "10,500", type: "24 EMI Per Month", badge: null },
-    ],
-    accentFrom: "from-yellow-400",
-    accentTo: "to-amber-600",
-    accentBg: "bg-yellow-500",
-    accentText: "text-yellow-400",
-    accentBorder: "border-yellow-500/30",
-    accentGlow: "rgba(234,179,8,0.4)",
-    accentBgLight: "bg-yellow-500/10",
-    accentHover: "hover:bg-yellow-500",
-    badgeBg: "bg-yellow-500",
-  },
-  {
-    id: 3,
-    name: "Mandkola Star City",
-    phase: "Phase 2",
-    image: "/star_city.png",
-    tagline: "Where Stars Align for Your Future",
-    description:
-      "Mandkola Star City Phase 2 brings you the most competitive rates in the region. Ideal for first-time buyers and smart investors looking for high-return opportunities in a rapidly developing area.",
-    highlights: [
-      "Best Value Rates",
-      "High ROI Potential",
-      "Developing Area",
-      "Easy Connectivity",
-    ],
-    pricing: [
-      { rate: "7,000", type: "One-Time Payment", badge: null },
-      { rate: "7,500", type: "12 EMI Per Month", badge: null },
-      { rate: "8,000", type: "18 EMI Per Month", badge: "Popular" },
-      { rate: "8,500", type: "24 EMI Per Month", badge: null },
-    ],
-    accentFrom: "from-blue-400",
-    accentTo: "to-indigo-600",
-    accentBg: "bg-blue-500",
-    accentText: "text-blue-400",
-    accentBorder: "border-blue-500/30",
-    accentGlow: "rgba(59,130,246,0.4)",
-    accentBgLight: "bg-blue-500/10",
-    accentHover: "hover:bg-blue-500",
-    badgeBg: "bg-blue-500",
-  },
-];
+import { properties } from "../../data/properties";
 
 export default function PropertiesPage() {
-  const [activeTab, setActiveTab] = useState(null);
 
   return (
     <Layout>
@@ -219,7 +126,7 @@ export default function PropertiesPage() {
               <div
                 className={`${index % 2 === 1 ? "lg:order-2" : "lg:order-1"}`}
               >
-                <div className="relative group">
+                <Link href={`/properties/${property.slug}`} className="relative group block">
                   {/* Glow effect behind image */}
                   <div
                     className={`absolute -inset-1 bg-gradient-to-r ${property.accentFrom} ${property.accentTo} rounded-3xl opacity-20 group-hover:opacity-30 blur-xl transition-opacity duration-500`}
@@ -234,6 +141,13 @@ export default function PropertiesPage() {
                     />
                     {/* Overlay gradient */}
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0a1128]/60 via-transparent to-transparent"></div>
+
+                    {/* View Details overlay on hover */}
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                      <span className="bg-white/90 text-[#0a1128] px-6 py-3 rounded-xl font-semibold text-sm shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        View Details →
+                      </span>
+                    </div>
 
                     {/* Price badge on image */}
                     <div className="absolute bottom-6 left-6">
@@ -251,7 +165,7 @@ export default function PropertiesPage() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               </div>
 
               {/* Details Side */}
@@ -260,7 +174,7 @@ export default function PropertiesPage() {
               >
                 {/* Description */}
                 <p className="text-gray-400 text-lg leading-relaxed mb-8 font-light">
-                  {property.description}
+                  {property.shortDescription}
                 </p>
 
                 {/* Highlights */}
@@ -340,19 +254,19 @@ export default function PropertiesPage() {
                 {/* CTA */}
                 <div className="mt-8 flex flex-col sm:flex-row gap-4">
                   <Link
-                    href="/contact"
+                    href={`/properties/${property.slug}`}
                     className={`flex-1 text-center px-8 py-4 bg-gradient-to-r ${property.accentFrom} ${property.accentTo} text-white font-semibold rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg`}
                     style={{
                       boxShadow: `0 4px 20px ${property.accentGlow}`,
                     }}
                   >
-                    Enquire Now
+                    View Full Details
                   </Link>
                   <Link
                     href="/contact"
                     className="flex-1 text-center px-8 py-4 bg-white/5 border border-white/10 text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-300"
                   >
-                    Book a Visit
+                    Enquire Now
                   </Link>
                 </div>
               </div>
@@ -501,7 +415,7 @@ export default function PropertiesPage() {
 
                   {/* CTA */}
                   <Link
-                    href="/contact"
+                    href={`/properties/${property.slug}`}
                     className={`block text-center w-full py-3 rounded-xl border ${property.accentBorder} ${property.accentText} font-semibold text-sm transition-all duration-300 ${property.accentHover} hover:text-white hover:border-transparent`}
                   >
                     Get Details
