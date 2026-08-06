@@ -584,7 +584,7 @@ export default function PropertyDetailPage() {
                 onClick={() => setIsMapFullscreen(true)}
               />
               {/* Click hint overlay */}
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+              <div className="absolute inset-0 pointer-events-none bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
                 <div className="bg-black/60 backdrop-blur-sm px-6 py-3 rounded-xl flex items-center gap-2 text-white font-medium">
                   <svg
                     className="w-5 h-5"
