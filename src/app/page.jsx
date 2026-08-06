@@ -164,10 +164,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             {/* Card 1 */}
-            <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group">
+            <Link href="/properties/city-shine" className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group cursor-pointer">
               <div className="relative h-56 overflow-hidden">
                 <span className="absolute top-4 left-4 z-10 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">Sale</span>
-                <img src="/city_shine.png" alt="Golden City" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img src="/city_shine.png" alt="City Shine" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="p-5">
                 <div className="flex justify-between items-start mb-2">
@@ -194,13 +194,13 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* Card 2 */}
-            <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group">
+            <Link href="/properties/mandkola-golden-city" className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group cursor-pointer">
               <div className="relative h-56 overflow-hidden">
                 <span className="absolute top-4 left-4 z-10 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">Sale</span>
-                <img src="/golden_city.png" alt="Ram Vihar" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img src="/golden_city.png" alt="Golden City" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="p-5">
                 <div className="flex justify-between items-start mb-2">
@@ -227,13 +227,13 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* Card 3 */}
-            <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group">
+            <Link href="/properties/mandkola-star-city" className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group cursor-pointer">
               <div className="relative h-56 overflow-hidden">
                 <span className="absolute top-4 left-4 z-10 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">Sale</span>
-                <img src="/star_city.png" alt="Asian Residency" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img src="/star_city.png" alt="Star City" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="p-5">
                 <div className="flex justify-between items-start mb-2">
@@ -260,7 +260,7 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-            </div>
+            </Link>
 
           </div>
         </div>
