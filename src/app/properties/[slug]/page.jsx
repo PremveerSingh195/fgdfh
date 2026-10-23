@@ -232,6 +232,23 @@ export default function PropertyDetailPage() {
                   </span>
                 </div>
 
+                {/* Video Tour Pill Badge */}
+                {property.video && (
+                  <a
+                    href="#video-tour"
+                    className="absolute top-6 right-6 inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-black/60 hover:bg-black/80 backdrop-blur-md border border-white/20 text-white text-xs font-semibold transition-all duration-300 hover:scale-105 shadow-lg group/btn cursor-pointer"
+                  >
+                    <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                    <svg
+                      className="w-3.5 h-3.5 fill-current text-white group-hover/btn:scale-110 transition-transform"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                    Watch Video Tour
+                  </a>
+                )}
+
                 {/* Location on image */}
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="flex items-center gap-2 text-white/90">
@@ -405,6 +422,21 @@ export default function PropertyDetailPage() {
                   Call Now
                 </a>
               </div>
+
+              {/* Video Tour Quick Link */}
+              {property.video && (
+                <a
+                  href="#video-tour"
+                  className={`mt-4 inline-flex items-center justify-center gap-2.5 w-full py-3.5 px-6 rounded-xl border ${property.accentBorder} ${property.accentBgLight} ${property.accentText} hover:bg-white/10 font-semibold text-sm transition-all duration-300 group`}
+                >
+                  <span className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <svg className="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </span>
+                  Watch On-Site Video Walkthrough ↓
+                </a>
+              )}
             </div>
           </div>
         </div>
@@ -603,6 +635,30 @@ export default function PropertyDetailPage() {
                 </div>
               </div>
             </div>
+
+            {/* Map Action Buttons */}
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
+              <button
+                onClick={() => setIsMapFullscreen(true)}
+                className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white text-sm font-medium transition-colors"
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                </svg>
+                Click to Enlarge
+              </button>
+              <a
+                href={property.siteMap}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-flex items-center gap-2 px-6 py-2.5 rounded-xl border ${property.accentBorder} ${property.accentBgLight} ${property.accentText} hover:bg-white/10 text-sm font-medium transition-colors`}
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+                Open Full Resolution Layout
+              </a>
+            </div>
           </div>
 
           {/* Fullscreen Map Modal */}
@@ -639,6 +695,84 @@ export default function PropertyDetailPage() {
           )}
         </div>
       </section>
+
+      {/* Site Video Tour Section */}
+      {property.video && (
+        <section id="video-tour" className="relative bg-[#0a1128] border-t border-white/5 overflow-hidden">
+          {/* Ambient Glow */}
+          <div
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full mix-blend-screen filter blur-[200px] opacity-[0.06] pointer-events-none"
+            style={{
+              backgroundColor: `rgb(${property.accentRgb})`,
+            }}
+          ></div>
+
+          <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24">
+            <div className="text-center mb-12">
+              <div
+                className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full ${property.accentBgLight} border ${property.accentBorder} mb-4`}
+              >
+                <span className={`w-2 h-2 rounded-full ${property.accentBg} animate-ping`}></span>
+                <span className={`text-xs font-bold uppercase tracking-wider ${property.accentText}`}>
+                  Live On-Site Walkthrough
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+                Site{" "}
+                <span
+                  className={`bg-clip-text text-transparent bg-gradient-to-r ${property.accentFrom} ${property.accentTo}`}
+                >
+                  Video Tour
+                </span>
+              </h2>
+              <p className="text-gray-400 text-lg max-w-2xl mx-auto font-light">
+                Take an exclusive ground-level virtual tour of {property.name}. Watch our leadership walk the site, showcase plot demarcations, 15'-18' wide roads, and proximity to Delhi border.
+              </p>
+            </div>
+
+            {/* Video Player Card */}
+            <div className="relative group">
+              <div
+                className={`absolute -inset-1 bg-gradient-to-r ${property.accentFrom} ${property.accentTo} rounded-3xl opacity-20 group-hover:opacity-30 blur-xl transition-opacity duration-500`}
+              ></div>
+              <div className="relative rounded-2xl md:rounded-3xl overflow-hidden border border-white/10 bg-black/60 backdrop-blur-md shadow-2xl p-3 sm:p-6">
+                <div className="relative rounded-xl md:rounded-2xl overflow-hidden bg-black flex items-center justify-center">
+                  <video
+                    controls
+                    playsInline
+                    preload="metadata"
+                    poster={property.image}
+                    className="w-full max-h-[640px] object-contain rounded-xl"
+                  >
+                    <source src={property.video} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+
+                {/* Key On-Site Highlights from Video */}
+                <div className="mt-6 pt-6 border-t border-white/10 grid grid-cols-2 sm:grid-cols-4 gap-4">
+                  <div className="p-3.5 rounded-xl bg-white/[0.03] border border-white/5 text-center">
+                    <p className={`text-sm font-bold ${property.accentText}`}>Delhi Border</p>
+                    <p className="text-xs text-gray-400 mt-1">Bahadurgarh Location</p>
+                  </div>
+                  <div className="p-3.5 rounded-xl bg-white/[0.03] border border-white/5 text-center">
+                    <p className={`text-sm font-bold ${property.accentText}`}>1.5 - 2 KM</p>
+                    <p className="text-xs text-gray-400 mt-1">To Metro Station</p>
+                  </div>
+                  <div className="p-3.5 rounded-xl bg-white/[0.03] border border-white/5 text-center">
+                    <p className={`text-sm font-bold ${property.accentText}`}>15'-18' Wide</p>
+                    <p className="text-xs text-gray-400 mt-1">Demarcated Roads</p>
+                  </div>
+                  <div className="p-3.5 rounded-xl bg-white/[0.03] border border-white/5 text-center">
+                    <p className={`text-sm font-bold ${property.accentText}`}>Ready to Build</p>
+                    <p className="text-xs text-gray-400 mt-1">Active Neighborhood</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Amenities Section */}
       <section className="relative bg-[#0a1128] border-t border-white/5">
@@ -835,27 +969,26 @@ export default function PropertyDetailPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {otherProperties.map((other) => (
               <Link
                 key={other.id}
                 href={`/properties/${other.slug}`}
-                className="group relative rounded-2xl border border-white/10 bg-white/[0.02] overflow-hidden hover:border-white/20 transition-all duration-500 hover:-translate-y-2"
+                className="group relative rounded-2xl border border-white/10 bg-white/[0.02] overflow-hidden hover:border-white/20 transition-all duration-500 hover:-translate-y-2 flex flex-col"
               >
-                <div className="flex flex-col sm:flex-row">
+                <div className="flex flex-col h-full">
                   {/* Image */}
-                  <div className="sm:w-2/5 h-48 sm:h-auto relative overflow-hidden">
+                  <div className="w-full h-48 relative overflow-hidden shrink-0">
                     <img
                       src={other.image}
                       alt={other.name}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0a1128]/50 sm:block hidden"></div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0a1128]/50 to-transparent sm:hidden"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0a1128]/70 via-transparent to-transparent"></div>
                   </div>
 
                   {/* Info */}
-                  <div className="sm:w-3/5 p-6">
+                  <div className="p-6 flex flex-col flex-1 justify-between">
                     {other.phase && (
                       <span
                         className={`inline-flex items-center px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-white ${other.accentBg} mb-3`}

@@ -87,12 +87,13 @@ export default function PropertiesPage() {
             className="absolute top-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full mix-blend-screen filter blur-[180px] opacity-[0.04] pointer-events-none"
             style={{
               [index % 2 === 0 ? "right" : "left"]: "-10%",
-              backgroundColor:
-                index === 0
-                  ? "#f59e0b"
-                  : index === 1
-                  ? "#eab308"
-                  : "#3b82f6",
+              backgroundColor: property.accentRgb
+                ? `rgb(${property.accentRgb})`
+                : index === 0
+                ? "#f59e0b"
+                : index === 1
+                ? "#eab308"
+                : "#3b82f6",
             }}
           ></div>
 
@@ -363,7 +364,7 @@ export default function PropertiesPage() {
           </div>
 
           {/* Comparison Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {properties.map((property) => (
               <div
                 key={property.id}
